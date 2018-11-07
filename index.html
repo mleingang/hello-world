@@ -3,6 +3,33 @@
     <title>My Website Title</title>
   </head>
   <body>
-    Hello, world!
+    <button onclick="sayHello();">Hello, Browser</button>
+    <p id='hello'></p>
+
+    <button onclick="consolePrint();">Hello, Console</button>
+
+    <button onclick='helloname();'>Hello, Stranger</button>
+
+    <button onclick='popup();'>Hello, Pop-up</button>
   </body>
+  <script type="text/javascript">
+
+    function sayHello() {
+      var p = document.getElementById('hello');
+      p.innerHTML = "Hello, World!";
+    }
+
+    function consolePrint () {
+      console.log('Hello, World!');
+    }
+
+    function helloname() {
+      var name = prompt('What is your name?');
+      alert('Hello, ' + name + '!');
+    }
+
+    function popup() {
+      alert('Hello, World!');
+    }
+  </script>
 </html>
